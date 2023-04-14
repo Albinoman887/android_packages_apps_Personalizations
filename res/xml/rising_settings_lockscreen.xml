@@ -68,11 +68,11 @@
         android:max="80"
         settings:min="1" />
 
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <!-- com.rising.settings.preferences.SecureSettingSwitchPreference
         android:key="pulse_on_new_tracks"
         android:icon="@drawable/ic_music_note"
         android:title="@string/pulse_on_new_tracks_title"
-        android:summary="@string/pulse_on_new_tracks_summary" />
+        android:summary="@string/pulse_on_new_tracks_summary" / -->
 
     </PreferenceCategory>
 
