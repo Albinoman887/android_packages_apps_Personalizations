@@ -87,6 +87,13 @@
             android:summary="@string/lockscreen_battery_info_summary"
             android:defaultValue="true" />
 
+        <Preference
+            android:key="udfps_settings"
+            android:icon="@drawable/ic_fp_selector"
+            android:title="@string/udfps_settings_title"
+            android:summary="@string/udfps_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.lockscreen.UdfpsSettings" />
+
     <!-- Clock Font style -->
     <Preference
         android:key="android.theme.customization.clock.fonts"
