@@ -66,7 +66,7 @@ public class UdfpsSettings extends SettingsPreferenceFragment {
         if (!udfpsResPkgInstalled) {
             prefSet.removePreference(mUdfpsAnimPreview);
         }
-
+    }
 
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
