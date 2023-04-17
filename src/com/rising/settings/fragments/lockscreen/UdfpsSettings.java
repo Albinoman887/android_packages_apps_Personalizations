@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2022 crDroid Android Project
+ * Copyright (C) 2023 RisingOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +39,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.rising.Utils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -60,7 +61,7 @@ public class UdfpsSettings extends SettingsPreferenceFragment {
         Resources resources = getResources();
 
         final boolean udfpsResPkgInstalled = Utils.isPackageInstalled(getContext(),
-                "com.crdroid.udfps.animations");
+                "com.rising.udfps.animations");
         mUdfpsAnimPreview = findPreference(UDFPS_ANIM_PREVIEW);
         if (!udfpsResPkgInstalled) {
             prefSet.removePreference(mUdfpsAnimPreview);
@@ -87,6 +88,6 @@ public class UdfpsSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 }
